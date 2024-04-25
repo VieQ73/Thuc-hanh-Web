@@ -1,469 +1,286 @@
-   <!DOCTYPE html>
-   <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
 
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link type="images/png" rel="icon" href="images/icons8-youtube.png">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
-     <link rel="stylesheet" href="css/style.css">
-     <title>Youtube </title>
-   </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   <body>
-     <!--    header      -->
-     <header class="header">
-       <div class="header_container">
-         <div class="none"> </div>
-         <div class="search">
-           <input type="text" placeholder="Search">
-           <i class="fa-solid fa-magnifying-glass"></i>
-         </div>
+</head>
+<body>
 
+    <!-- <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><i class="fa fa-search search"></i></button>
+        </div>
+        <div class="user-options">
+            <img src="video.PNG" class="icon" alt="">
+            <img src="grid.PNG" class="icon" alt="">
+            <img src="bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="./profilepic.jpg" alt="">
+            </div>
+        </div>
+    </nav> -->
 
-         <div class="user">
-           <div class="icon">
-             <i class="fa-solid fa-video"></i>
-             <i class="fa-solid fa-grip"></i>
-             <i class="fa-solid fa-bell"></i>
-           </div>
+    <div class="navbar">
+        <div class="left">
+            <i class="fa fa-bars"></i>
+            <div class="logo">
+                <img src="./logo.PNG" alt="logo">
+            </div>
+        </div>
+        <div class="center">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><i class="fa fa-search search"></i></button>
+        </div>
+        <div class="right">
+                <i class="fa fa-video-camera icon"></i>
+                <i class="fa fa-th icon"></i>
+                <i class="fa fa-bell-o icon"></i>
+                <img src="./profilepic.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
-           <div class="img">
-             <img src="images/logo.png" alt="">
-           </div>
-         </div>
+    <div class="youtube-content">
+        <div class="sidebar">
+                <a href="#" class="links active"><img src="home.PNG" alt="">home</a>
+                <a href="#" class="links"><img src="explore.PNG" alt="">explore</a>
+                <a href="#" class="links"><img src="subscription.PNG" alt="">subscription</a>
+                <hr class="seperator">
+                <a href="#" class="links"><img src="library.PNG" alt="">library</a>
+                <a href="#" class="links"><img src="history.PNG" alt="">history</a>
+                <a href="#" class="links"><img src="your-video.PNG" alt="">your video</a>
+                <a href="#" class="links"><img src="watch-later.PNG" alt="">watch leater</a>
+                <a href="#" class="links"><img src="liked video.PNG" alt="">like video</a>
+                <a href="#" class="links"><img src="show more.PNG" alt="">show more</a>
+        </div>
+        <div class="main-content">
+            <div class="channel-summary">
+                <div class="channel-image">
+                    <img src="back.png" alt="">
+                </div>
+                <div class="channel-info">
+                    <div class="channel-name">
+                        <img src="./profilepic.jpg" alt="profile-image">
+                        <div class="channel-subscribers">
+                            <span class="name">B21DCCN636</span>
+                            <span class="subscribers">23.6M subscribers</span>
+                        </div>
+                    </div>
+                    <div class="subscriber-btn">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filters-btn">
+                        <button class="filter-options active">Home</button>
+                        <button class="filter-options">video</button>
+                        <button class="filter-options">playlists</button>
+                        <button class="filter-options">community</button>
+                        <button class="filter-options">channel</button>
+                        <button class="filter-options">about</button>
+                        <i class="fa fa-search search"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div> <hr>
+                <div class="video-container">
+                    <div class="heading">
+                        <h3>Popular uploads</h3>
+                        <div class="play-btn">
+                            <i class="fa fa-play"></i>
+                            <h3>play all</h3>
+                        </div>
+                    </div>
+                    <div class="all-popular-videos">
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=LxXKeCTJ3Q4&list=PLKYV2jefkszDZvnZcm5nTHLzwWYmxoSBt&index=5"><img src="./popular1.webp" alt="popular"></a> 
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=V5SlVHEpAvc&list=PLKYV2jefkszDZvnZcm5nTHLzwWYmxoSBt&index=4">
+                            <div class="video-title">
+                                
+                                     <span class="video-name">New video - B21DCCN636</span>
+                                     <span class="video-view">86M views . 2 years ago</span>
+                               
+                            </div>
+                            </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=V5SlVHEpAvc&list=PLKYV2jefkszDZvnZcm5nTHLzwWYmxoSBt&index=4"><img src="./popular2.webp" alt="popular"></a>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=YeUaCbAtrVg">
+                            <div class="video-title">
+                                <span class="video-name">Thôi Đông Sơn từng tới đây - B21DCCN636</span>
+                                <span class="video-view">73M views . 3 minutes ago</span>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./pop.webp" alt="popular"></a>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <div class="video-title">
+                                <span class="video-name">wow amazing goodjob - B21DCCN636</span>
+                                <span class="video-view">62M views . 3 years ago</span>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./popular4.webp" alt="popular"></a>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <div class="video-title">
+                                <span class="video-name">He He He Hi Hi Hi - B21DCCN636</span>
+                                <span class="video-view">37M views . 1 months ago</span>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div> <hr>
+                <div class="video-container">
+                    <div class="heading">
+                        <h3>uploads</h3>
+                        <div class="play-btn">
+                            <i class="fa fa-play"></i>
+                            <h3>play all</h3>
+                        </div>
+                    </div>
+                    <div class="all-popular-videos">
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="./upload1.webp" alt="popular"></a>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <div class="video-title">
+                                <span class="video-name">Jian lai - Sword Comes - 5/5 On the air - B21DCCN636</span>
+                                <span class="video-view">74M views . an hour ago</span>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./upload2.webp" alt="popular"></a> 
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <div class="video-title">
+                                    <span class="video-name">New Ai model - B21DCCN636</span>
+                                    <span class="video-view">81M views . 3000 years ago</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./upload3.webp" alt="popular"></a>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <div class="video-title">
+                                    <span class="video-name">Chen Ping An + Ning Yao - B21DCCN636</span>
+                                    <span class="video-view">1-1M views . 3 hours ago</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popular-videos">
+                            <div class="popular-video-image">
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./upload4.webp" alt="popular"></a>
+                            </div>
+                           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <div class="video-title">
+                                <span class="video-name">College Farewell - B21DCCN636</span>
+                                <span class="video-view">10M views . 3 months ago</span>
+                            </div>
+                           </a>
+                        </div>
+                    </div>
+                </div> <hr>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+            
+    
+        <!-- videos--> 
+        <!-- <div class="heading">
+            <h1>POPULAR UPLOADS</h1>
+        </div>
+    
+       <div class="video-container">
+            <div class="video">
+                <img src="img/profile-pic.png" class="thumbnail" alt="">
+                <div class="content">
+                    <img src="img/profile-pic.png" class="channel-icon" alt="">
+                    <div class="info">
+                        <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                        <p class="channel-name">modern web</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video">
+                <img src="img/profile-pic.png" class="thumbnail" alt="">
+                <div class="content">
+                    <img src="img/profile-pic.png" class="channel-icon" alt="">
+                    <div class="info">
+                        <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                        <p class="channel-name">modern web</p>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="video">
+                <img src="img/profile-pic.png" class="thumbnail" alt="">
+                <div class="content">
+                    <img src="img/profile-pic.png" class="channel-icon" alt="">
+                    <div class="info">
+                        <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                        <p class="channel-name">modern web</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video">
+                <img src="img/profile-pic.png" class="thumbnail" alt="">
+                <div class="content">
+                    <img src="img/profile-pic.png" class="channel-icon" alt="">
+                    <div class="info">
+                        <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                        <p class="channel-name">modern web</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video">
+                <img src="img/profile-pic.png" class="thumbnail" alt="">
+                <div class="content">
+                    <img src="img/profile-pic.png" class="channel-icon" alt="">
+                    <div class="info">
+                        <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                        <p class="channel-name">modern web</p>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+    </div>
 
-         <div class="toggle">
-           <i class="fa-solid fa-bars" id="header-toggle"></i>
-         </div>
-       </div>
-     </header>
-     <!--    header      -->
-
-
-     <!--    nav      -->
-     <section class="nav" id="navbar">
-       <nav class="nav_container">
-         <div>
-           <a href="#" class="nav_link nav_logo ">
-             <i class="fa-solid fa-bars nav_icon"></i>
-             <span class="logo_name">
-               <i class="fab fa-youtube"></i>
-               Youtube
-             </span>
-           </a>
-
-           <div class="nav_list">
-             <div class="nav_items navtop">
-               <a href="#" class="nav_link navtop active">
-                 <i class="fa fa-house nav_icon"></i>
-                 <span class="nav_name">Home</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa fa-compass nav_icon"></i>
-                 <span class="nav_name">Explore</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa-brands fa-tiktok nav_icon"></i>
-                 <span class="nav_name">Short Video</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa-solid fa-users nav_icon"></i>
-                 <span class="nav_name">Channel</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa-solid fa-video nav_icon"></i>
-                 <span class="nav_name">Library</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
-                 <span class="nav_name">History</span>
-               </a>
-               <a href="#" class="nav_link navtop">
-                 <i class="fa-solid fa-thumbs-up nav_icon"></i>
-                 <span class="nav_name">Like</span>
-               </a>
-
-               <div class="nav_dropdown">
-                 <a href="#" class="nav_link">
-                   <i class="fa-solid fa-chevron-down nav_icon"></i>
-                   <span class="nav_name">Show More</span>
-                 </a>
-
-                 <div class="nav_dropdown-collapse">
-                   <div class="nav_dropdown-content">
-                     <a href="#" class="nav_dropdown-item">Grid Box</a>
-                     <a href="#" class="nav_dropdown-item">Frontend Design</a>
-                     <a href="#" class="nav_dropdown-item">Backend Design</a>
-                   </div>
-                 </div>
-               </div>
-
-               <a href="#" class="nav_link">
-                 <i class="fa-solid fa-comment nav_icon"></i>
-                 <span class="nav_name">Messages</span>
-               </a>
-             </div>
-
-             <div class="nav_items subscribe-container">
-               <h3 class="nav_subititle">SUBSCRIPTIONS</h3>
-
-               <a href="#" class="nav_link">
-                 <img class="subscribe" src="https://img.icons8.com/dusk/64/hedwig.png" alt="">
-                 <span class="nav_name">B21DCCN636</span>
-               </a>
-               <a href="#" class="nav_link">
-                 <img class="subscribe" src="https://img.icons8.com/dusk/64/futurama-nibbler.png" />
-                 <span class="nav_name">Le Dinh Quy</span>
-               </a>
-               <a href="#" class="nav_link">
-                 <img class="subscribe" src="https://img.icons8.com/dusk/64/futurama-zapp-brannigan.png" />
-                 <span class="nav_name">Quy Dinh Le</span>
-               </a>
-               <a href="#" class="nav_link">
-                 <img class="subscribe" src="https://img.icons8.com/dusk/64/reindeer.png" />
-                 <span class="nav_name">Quy Le Dinh</span>
-               </a>
-
-
-               <div class="nav_dropdown">
-                 <a href="#" class="nav_link">
-                   <i class="fa-solid fa-chevron-down nav_icon"></i>
-                   <span class="nav_name">Show 3 More</span>
-                 </a>
-
-                 <div class="nav_dropdown-collapse nav_dropdown-second">
-                   <div class="nav_dropdown-content">
-                     <a href="#" class="nav_dropdown-items">
-                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
-                       <span class="nav_name">Frontend Design</span>
-                     </a>
-                     <a href="#" class="nav_dropdown-items">
-                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
-                       <span class="nav_name">Backend Design</span>
-                     </a>
-                     <a href="#" class="nav_dropdown-items">
-                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
-                       <span class="nav_name">Backend Design</span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </nav>
-     </section>
-     <!--    nav      -->
-
-
-     <main>
-       <section class="video_content grid">
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back5.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="images/logo.png" alt="">
-             </div>
-             <div class="heading">
-               <p>How to make a youtube clone with HTML css ......</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back1.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/ios/50/mr-blobby.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back3.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/stickers/100/stich.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back4.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/matisse/100/santa.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back6.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/stickers/100/stich.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back5.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="images/logo.png" alt="">
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back1.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/futurama-professor-farnsworth.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back3.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/black-stalker.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back4.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/futurama-zoidberg.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back6.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/futurama-zoidberg.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back5.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="images/logo.png" alt="">
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back1.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/futurama-zoidberg.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back3.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/frankensteins-monster--v1.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back4.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/frankensteins-monster--v1.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back6.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/venom-head.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back5.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="images/logo.png" alt="">
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back1.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/growtopia.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back3.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/homer-simpson--v1.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back4.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/son-goku.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-         <div class="video_items">
-           <a href="single-page.html">
-             <img src="images/video_images/back6.jpg" alt="">
-           </a>
-           <div class="details flex">
-             <div class="img">
-               <img src="https://img.icons8.com/dusk/64/hedwig.png" />
-             </div>
-             <div class="heading">
-               <p>How to make Youtube Website with HTML CSS hehehe....</p>
-               <span>B21DCCN636 <i class="fa fa-circle-check"></i> </span>
-               <span>86.8m .1 minute ago</span>
-             </div>
-           </div>
-         </div>
-       </section>
-     </main>
-
-
-     <script src="js/main.js" charset="utf-8"></script>
-   </body>
-
-   </html>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
